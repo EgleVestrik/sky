@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import MyButton from './MyButton';
 import { Stack, Typography } from '@mui/material';
 import { FormEvent, useState, useEffect } from 'react';
+import Grid from '@mui/material/Grid2';
 
 export default function SimpleContainer() {
   const [form, setForm] = useState({ username: "", password: "" });
@@ -48,7 +49,7 @@ export default function SimpleContainer() {
       <Container maxWidth="sm">
       <Box 
         component="form"
-        sx={{ '& > :not(style)': { m: 1, width: '25ch' }, bgcolor: '#F5B3EE', height: '25vh' }}
+        sx={{ '& > :not(style)': { m: 1, width: '25ch' }, bgcolor: '#F5B3EE', height: '50vh' }}
         noValidate
         autoComplete="off"
         >
